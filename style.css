@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-master: #00c3ff;
+  --clr-slave: #3dd2ff;
+  --clr-white: #fdfeff;
+  --clr-black: #234;
+}
+
+a,
+button,
+select,
+option,
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+html {
+  font-family: 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 22px;
+  color: var(--clr-black);
+}
+
+.row {
+  font-size: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.row > * {
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+  font-size: 1rem;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.pave {
+  text-align: center;
+}
+.pave > * {
+  display: inline-block;
+  margin: 5px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.top{
+  text-align: center;
+}
+
+.main {
+  min-width: 300px;
+}
+
+.field_text {
+  width: 250px;
+  margin: 0 auto;
+  padding: 5px;
+  text-align: left;
+}
+.field_text > input {
+  width: 100%;
+  color: var(--clr-black);
+}
+
+.field_button {
+  width: 250px;
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+}
+
+
+
+.shifter {
+  width: 200px;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 20px;
+  background: linear-gradient(45deg, var(--clr-slave), var(--clr-master));
+  color: var(--clr-white);
+  user-select: none;
+}
+
+
+
+.shifter > div {
+  background-color: var(--clr-slave);
+}
+
+.shifter progress,
+.shifter button,
+.shifter input,
+.shifter ::-webkit-slider-thumb {
+  border: none;
+  outline: none;
+  user-select: none;
+  writing-mode: unset;
+  appearance: none;
+  -moz-appearance: none;
+	-webkit-appearance: none;
+}
+
+.shifter input,
+.shifter button {
+  color: var(--clr-white);
+}
+
+.shifter [type=text] {
+  width: calc(100% - 60px);
+  height: 40px;
+  background-color: transparent;
+  text-align: center;
+  font-weight: bold;
+}
+
+.shifter button {
+  width: 30px;
+  height: 40px;
+  background-color: transparent;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.shifter progress,
+.shifter [type="range"] {
+  width: 100%;
+}
+
+.shifter label {
+  display: inline-block;
+  width: 100%;
+	border-radius: 6px;
+  background: var(--clr-slave);
+  text-align: center;
+}
+
+
+
+.shifter [type=range] {
+  height: 19px;
+  /* overflow: visible; */
+	border-radius: 6px;
+  /* background: transparent; */
+  background: var(--clr-slave);
+}
+.shifter [type=range]::-webkit-slider-thumb {
+	width: 19px;
+	height: 19px;
+  border: none;
+	border-radius: 50%;
+	background: var(--clr-white);
+	cursor: pointer;
+}
+.shifter [type=range]::-moz-range-thumb {
+	width: 19px;
+	height: 19px;
+  border: none;
+	border-radius: 50%;
+	background: var(--clr-white);
+	cursor: pointer;
+}
+
+
+
+.shifter progress {
+  height: 16px;
+  overflow: hidden;
+  border-radius: 15px;
+  background: var(--clr-slave);
+  color: var(--clr-white);
+}
+.shifter progress::-moz-progress-bar {
+  background: var(--clr-white);
+}
+.shifter progress::-webkit-progress-value {
+  background: var(--clr-white);
+}
+.shifter progress::-webkit-progress-bar {
+  background: var(--clr-slave);
+}
+.shifter progress {
+  vertical-align: bottom;
+  transform: translateY(50%);
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 50%,
+    0% 50%
+  );
+}
+.shifter progress ~ progress {
+  vertical-align: top;
+  transform: translateY(-50%);
+  clip-path: polygon(
+    0% 50%,
+    100% 50%,
+    100% 100%,
+    0% 100%
+  );
+}
+
+.box {
+  margin: 0 auto;
+  width: 300px;
+  height: 150px;
+  background-color: #00c3ff;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.box > .top,
+.box > .bottomm {
+  height: 50%;
+}
+
+.box > .top {
+  text-align: center;
+}
+.box >.top > input {
+  text-align: center  ;
+  border-radius: 10px;
+  border: 0;
+}
+
+.box > .bottomm {
+  text-align: center;
+  background-color: #3dd2ff;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.box > .bottomm > button {
+  border-radius: 10px;
+  border: 0;
+  padding: 5px;
+  background-color: white;
+}
+
+#total_balance {
+  border-radius: 10px;
+}
+#setTotal {
+  background-color: white;
+  border-radius: 10px;
+}
+
+#stop {
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.coin-quantity {
+  height: 40px;
+  text-align: center;
+}
