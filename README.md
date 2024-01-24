@@ -2,10 +2,8 @@ This JavaScript script is designed to simulate trading interactions within a web
 
 Key Features:
 
-Dynamic Element Generation:
+Dynamic Element Generation
 
-The script dynamically creates elements such as sliders, buttons, and progress bars based on user actions.
-Real-time Updates:
 
 The script continuously updates the displayed values and progress bars, creating a real-time visualization of trading-related data.
 User Interaction:
